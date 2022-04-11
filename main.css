@@ -26,11 +26,6 @@ body {
   position: fixed;
 }
 
-.nav-img {
-  width: 20%;
-  margin-left: -40%;
-}
-
 .web-nav {
   display: none;
 }
@@ -456,7 +451,7 @@ footer {
   }
 
   .web-nav-list {
-    margin-right: 14px;
+    margin-right: 32px;
   }
 
   nav.nav-item1 {

@@ -14,7 +14,7 @@ document.querySelectorAll('.web-nav-link').forEach((link) => {
   });
 });
 
-const devsections = document.querySelector('.dev_section');
+const devSections = document.querySelector('.dev_section');
 
 const devList = [
   {
@@ -55,9 +55,9 @@ const devList = [
   },
 ];
 
-devsections.innerHTML = '';
+devSections.innerHTML = '';
 for (let i = 0; i < devList.length; i += 1) {
-  devsections.innerHTML += `
+  devSections.innerHTML += `
       <div class='devs'>
           <div class='devs__image'>
             <img src='${devList[i].imageLink}' alt='gamer 1' class='img1' />
