@@ -1,20 +1,20 @@
 function openNav() {
-    document.getElementById('myNav').style.display = 'block';
-  }
-  
-  function closeNav() {
-    document.getElementById('myNav').style.display = 'none';
-  }
-  
-  document.querySelector('.hamburger-span').addEventListener('click', openNav);
-  document.querySelector('.closebtn').addEventListener('click', closeNav);
-  document.querySelectorAll('.web-nav-link').forEach((link) => {
-    link.addEventListener('click', () => {
-      document.getElementById('myNav').style.display = 'none';
-    });
-  });
+  document.getElementById('myNav').style.display = 'block';
+}
 
-  const gamerSections = document.querySelector('.dev_section');
+function closeNav() {
+  document.getElementById('myNav').style.display = 'none';
+}
+
+document.querySelector('.hamburger-span').addEventListener('click', openNav);
+document.querySelector('.closebtn').addEventListener('click', closeNav);
+document.querySelectorAll('.web-nav-link').forEach((link) => {
+  link.addEventListener('click', () => {
+    document.getElementById('myNav').style.display = 'none';
+  });
+});
+
+const gamerSections = document.querySelector('.dev_section');
 
 const devList = [
   {
