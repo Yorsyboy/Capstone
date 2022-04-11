@@ -258,6 +258,7 @@ hr {
 
 .long_desc {
   width: 105%;
+  font-size: 13px;
 }
 
 .short_desc h4 {
