@@ -60,9 +60,9 @@ for (let i = 0; i < devList.length; i += 1) {
   devSections.innerHTML += `
       <div class='devs'>
           <div class='devs__image'>
-            <img src='${devList[i].imageLink}' alt='gamer 1' class='img1' />
+            <img src='${devList[i].imageLink}' alt='dev 1' class='img1' />
           </div>
-          <div class='gamer__description'>
+          <div class='dev__description'>
             <h3>${devList[i].name}</h3>
             <div class='short_desc'>
               <h4> ${devList[i].nickName}</h4>

@@ -286,7 +286,7 @@ hr {
   transform: translateZ(10px) rotateX(20deg) rotateY(30deg);
 }
 
-.gamer__description {
+.dev__description {
   width: 60%;
   padding-left: 10%;
 }
