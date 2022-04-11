@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Yorsyboy/Capstone/issues"
   },
-  "homepage": "https://github.com/Yorsyboy/Capstone#readme"
+  "homepage": "https://github.com/Yorsyboy/Capstone#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1"
+  }
 }
