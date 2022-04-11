@@ -116,7 +116,7 @@ body {
   align-items: center;
   font-weight: normal;
   opacity: 0;
-  animation: revealText .5s forwards;
+  animation: revealText 0.5s forwards;
 }
 
 .title {
@@ -128,14 +128,15 @@ body {
   padding-left: 10%;
   font-family: 'cocogoose', sans-serif;
   opacity: 0;
-  animation: revealText .5s forwards;
+  animation: revealText 0.5s forwards;
 }
 
 @keyframes revealText {
-  from{
+  from {
     transform: translate(20px);
   }
-  to{
+
+  to {
     opacity: 1;
     transform: none;
   }
@@ -224,44 +225,44 @@ hr {
   text-align: center;
 }
 
-.button{
-    text-decoration: none;
-    text-align: center;
-    font-size: 25px;
-    color: #ec5242;
-    padding: 5px;
-    border: 3px solid #ec5242;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.button {
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  color: #ec5242;
+  padding: 5px;
+  border: 3px solid #ec5242;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .button::before,
-.button::after{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border: inherit;
-    transition: all .5s ease-in;
+.button::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: inherit;
+  transition: all 0.5s ease-in;
 }
 
-.button::before{
-    top: -15px;
-    left: -15px;
-    border-width: 3px 0 0 3px;
+.button::before {
+  top: -15px;
+  left: -15px;
+  border-width: 3px 0 0 3px;
 }
 
-.button::after{
-    bottom: -15px;
-    right: -15px;
-    border-width: 0 3px 3px 0;
+.button::after {
+  bottom: -15px;
+  right: -15px;
+  border-width: 0 3px 3px 0;
 }
 
 .button:hover::before,
-.button:hover::after{
-    width: calc(100% + 27px);
-    height: calc(100% + 27px);
+.button:hover::after {
+  width: calc(100% + 27px);
+  height: calc(100% + 27px);
 }
 
 #devs {
@@ -278,7 +279,7 @@ hr {
   display: flex;
   width: 40%;
   justify-content: center;
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
 
 .devs__image:hover {
@@ -381,7 +382,7 @@ footer {
   font-family: 'cocogoose', sans-serif;
   justify-content: center;
   opacity: 0;
-  animation: revealText .5s forwards;
+  animation: revealText 0.5s forwards;
 }
 
 .about-venue {
