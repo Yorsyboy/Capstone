@@ -226,17 +226,17 @@ hr {
   border: none;
 }
 
-#gamers {
+#devs {
   padding-left: 10%;
 }
 
-.gamers {
+.devs {
   display: flex;
   margin: 5%;
   height: 172px;
 }
 
-.gamers__image {
+.devs__image {
   display: flex;
   width: 40%;
   justify-content: center;
@@ -269,7 +269,7 @@ hr {
   text-transform: uppercase;
 }
 
-.gamers-title {
+.devs-title {
   text-align: center;
   color: #272a31;
   margin-top: 3%;
@@ -460,5 +460,55 @@ footer {
 
   nav.nav-item1 {
     width: 20%;
+  }
+
+  .program-web {
+    display: flex;
+  }
+
+  .program-item {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 1%;
+  }
+
+  #devs {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-right: 10%;
+  }
+
+  .partners img {
+    width: 20%;
+  }
+
+  .logo hr {
+    margin: 1% 45%;
+    border: 2px solid #ec5242;
+  }
+
+  .cn-logo img {
+    width: 20%;
+    border: 1px solid #272a31;
+  }
+
+  .event {
+    display: flex;
+  }
+
+  .summit {
+    display: flex;
+    height: 20vh;
+    background-size: cover;
+    margin: 30px;
+    background-repeat: no-repeat;
+  }
+
+  .summit div {
+    font-size: 30px;
+    align-self: center;
+    color: white;
+    padding-top: 0%;
   }
 }

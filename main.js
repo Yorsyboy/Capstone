@@ -14,7 +14,7 @@ document.querySelectorAll('.web-nav-link').forEach((link) => {
   });
 });
 
-const gamerSections = document.querySelector('.dev_section');
+const devsections = document.querySelector('.dev_section');
 
 const devList = [
   {
@@ -55,11 +55,11 @@ const devList = [
   },
 ];
 
-gamerSections.innerHTML = '';
+devsections.innerHTML = '';
 for (let i = 0; i < devList.length; i += 1) {
-  gamerSections.innerHTML += `
-      <div class='gamers'>
-          <div class='gamers__image'>
+  devsections.innerHTML += `
+      <div class='devs'>
+          <div class='devs__image'>
             <img src='${devList[i].imageLink}' alt='gamer 1' class='img1' />
           </div>
           <div class='gamer__description'>
