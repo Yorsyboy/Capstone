@@ -23,11 +23,12 @@ body {
   height: 50px;
   padding: 1%;
   align-items: center;
+  position: fixed;
 }
 
 .nav-img {
   width: 20%;
-  margin-left: -50%;
+  margin-left: -40%;
 }
 
 .web-nav {
@@ -455,10 +456,14 @@ footer {
   }
 
   .web-nav-list {
-    margin-right: 32px;
+    margin-right: 14px;
   }
 
   nav.nav-item1 {
+    width: 20%;
+  }
+
+  .nav-item1 img {
     width: 20%;
   }
 
