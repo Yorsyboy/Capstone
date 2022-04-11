@@ -23,7 +23,6 @@ body {
   height: 50px;
   padding: 1%;
   align-items: center;
-  position: fixed;
 }
 
 .web-nav {
@@ -116,6 +115,8 @@ body {
   padding-left: 10%;
   align-items: center;
   font-weight: normal;
+  opacity: 0;
+  animation: revealText .5s forwards;
 }
 
 .title {
@@ -126,6 +127,18 @@ body {
   display: flex;
   padding-left: 10%;
   font-family: 'cocogoose', sans-serif;
+  opacity: 0;
+  animation: revealText .5s forwards;
+}
+
+@keyframes revealText {
+  from{
+    transform: translate(20px);
+  }
+  to{
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .description {
@@ -211,15 +224,44 @@ hr {
   text-align: center;
 }
 
-.program-button {
-  background-color: #ec5242;
-  align-self: center;
-  color: #fff;
-  margin-bottom: 10%;
-  height: 40px;
-  width: 40%;
-  justify-self: center;
-  border: none;
+.button{
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    color: #ec5242;
+    padding: 5px;
+    border: 3px solid #ec5242;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button::before,
+.button::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: inherit;
+    transition: all .5s ease-in;
+}
+
+.button::before{
+    top: -15px;
+    left: -15px;
+    border-width: 3px 0 0 3px;
+}
+
+.button::after{
+    bottom: -15px;
+    right: -15px;
+    border-width: 0 3px 3px 0;
+}
+
+.button:hover::before,
+.button:hover::after{
+    width: calc(100% + 27px);
+    height: calc(100% + 27px);
 }
 
 #devs {
@@ -236,6 +278,11 @@ hr {
   display: flex;
   width: 40%;
   justify-content: center;
+  transition: transform .5s;
+}
+
+.devs__image:hover {
+  transform: translateZ(10px) rotateX(20deg) rotateY(30deg);
 }
 
 .gamer__description {
@@ -333,6 +380,8 @@ footer {
   padding: 5% 20%;
   font-family: 'cocogoose', sans-serif;
   justify-content: center;
+  opacity: 0;
+  animation: revealText .5s forwards;
 }
 
 .about-venue {
