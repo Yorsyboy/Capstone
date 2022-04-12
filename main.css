@@ -137,7 +137,7 @@ body {
   background-size: cover;
   background-position: center;
   transform: translate(-50%, -50%);
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
   color: transparent;
 }
