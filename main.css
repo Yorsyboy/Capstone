@@ -134,8 +134,10 @@ body {
   opacity: 0;
   animation: revealText 0.5s forwards;
   background-image: url("/images/bg.png");
+  background-size: cover;
   background-position: center;
   transform: translate(-50%, -50%);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
