@@ -7,7 +7,7 @@ Built from this [Behance](https://www.behance.net/gallery/29845175/CC-Global-Sum
 
 ## Live Demo
 
-[Live Demo Link](https://https://yorsyboy.github.io/Capstone/)
+[Live Demo Link](https://yorsyboy.github.io/Capstone/)
 
 ## Video
 In the following [link](https://www.loom.com/share/eb9df83f56b8498487a25c83e2c89b27) I am explaining the capstone project.

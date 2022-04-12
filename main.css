@@ -25,6 +25,10 @@ body {
   align-items: center;
 }
 
+.top-nav {
+  display: none;
+}
+
 .web-nav {
   display: none;
 }
@@ -120,15 +124,20 @@ body {
 }
 
 .title {
-  color: #ec5242;
   width: 70%;
   font-size: 50px;
   line-height: 70px;
   display: flex;
   padding-left: 10%;
   font-family: 'cocogoose', sans-serif;
+  text-transform: uppercase;
   opacity: 0;
   animation: revealText 0.5s forwards;
+  background-image: url("/images/bg.png");
+  background-position: center;
+  transform: translate(-50%, -50%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 @keyframes revealText {
@@ -222,7 +231,7 @@ hr {
 .program-item p {
   padding: 0 4%;
   color: white;
-  text-align: center;
+  text-align: left;
 }
 
 .button {
@@ -289,6 +298,7 @@ hr {
 .dev__description {
   width: 60%;
   padding-left: 10%;
+  padding-top: 10%;
 }
 
 .short_desc {
@@ -354,6 +364,19 @@ footer {
 
 .imgfoot {
   height: 100px;
+}
+
+.about-footer {
+  display: flex;
+  align-items: center;
+  padding: 2%;
+  justify-content: space-around;
+  text-align: end;
+  background-color: #272a31;
+}
+
+.about-footer p {
+  color: #d3d3d3;
 }
 
 /* Start of about page */
@@ -473,12 +496,44 @@ footer {
   color: white;
 }
 
+.event-text {
+  font-size: 25px;
+  text-align: center;
+}
+
+.img1 {
+  width: 150%;
+  height: 150%;
+}
+
 @media screen and (min-width: 768px) {
   .web-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+  }
+
+  .top-nav {
+    background-color: #272a31;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .top-ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .top-list {
+    color: #d3d3d3;
+    padding: 10px;
+  }
+
+  .logout {
+    margin-right: 30px;
   }
 
   .nav-item3 {
@@ -523,6 +578,10 @@ footer {
     margin: 1%;
   }
 
+  .program-item:hover {
+    border: 1px solid #d3d3d3;
+  }
+
   #devs {
     display: grid;
     grid-template-columns: auto auto;
@@ -545,6 +604,11 @@ footer {
 
   .event {
     display: flex;
+  }
+
+  .event-text {
+    font-size: 15px;
+    text-align: center;
   }
 
   .summit {

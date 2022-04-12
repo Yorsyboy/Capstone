@@ -72,6 +72,7 @@ for (let i = 0; i < devList.length; i += 1) {
               <p>
                 ${devList[i].description}
               </p>
+            </div>
     </div>
   `;
 }
