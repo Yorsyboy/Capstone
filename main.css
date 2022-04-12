@@ -135,7 +135,7 @@ body {
   animation: revealText 0.5s forwards;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: url("/images/bg.png");
+  background-image: url("images/bg.png");
   background-size: cover;
   background-position: center;
 }
