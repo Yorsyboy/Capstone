@@ -124,7 +124,7 @@ body {
 }
 
 .title {
-  width: 70%;
+  width: 93%;
   font-size: 50px;
   line-height: 70px;
   display: flex;
@@ -133,13 +133,11 @@ body {
   text-transform: uppercase;
   opacity: 0;
   animation: revealText 0.5s forwards;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   background-image: url("/images/bg.png");
   background-size: cover;
   background-position: center;
-  transform: translate(-50%, -50%);
-  background-clip: content-box;
-  -webkit-background-clip: text;
-  color: transparent;
 }
 
 @keyframes revealText {
